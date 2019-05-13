@@ -38,7 +38,10 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour voir l'image au fo
 	
 	Pour connaître sa version de GTK:
 	
-	- Vous pouvez vérifier dans votre gestionnaire de paquets la version du paquet `libgtk-3-0`.
+	- Vous pouvez vérifier dans votre gestionnaire de paquets la version du paquet `gtk+-3.0`.
+
+	- Sur la ligne de commande, `gtk-launch --version`, ou
+	- `pkg-config --modversion gtk+-3.0`.
 	
 	- Si vous utilisez Ubuntu, voici une correspondance entre ses versions et celles de GTK (pour une installation par défaut d'Ubuntu):
 	
@@ -53,15 +56,19 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour voir l'image au fo
 		- Ubuntu 16.04: GTK 3.18
 		- Ubuntu 16.10: GTK 3.20
 
+    - Pour les utilisatuers des distributions autres, voir les tabelles sur [DistroWatch.com](https://distrowatch.com/).
+
 - Extraire l'archive.
 
 - Renommer le dossier extrait en `Clearlooks-Phenix`.
 
-- Copier le dossier `Clearlooks-Phenix` dans un des deux emplacements suivants:
+- Copier le dossier `Clearlooks-Phenix` dans un des emplacements suivants:
 
-	- `~/.themes/` pour l'utilisateur courant;
+	Pour l'utilisateur courant:
+	- `~/.local/share/themes/`, ou
+	- `~/.themes/`;
 	
-	- `/usr/share/themes/` pour tous les utilisateurs, incluant le style des logiciels lancés en tant que superutilisateur (par exemple Synaptic).
+	- `/usr/share/themes/` pour tous les utilisateurs, incluant le style des logiciels lancés en tant que superutilisateur.
 
 ### Sélection du thème
 
@@ -107,7 +114,7 @@ Pour avoir une couleur personnalisée, modifier la couleur directement dans le f
 
 ### Emplacement des boutons de fenêtres
 
-Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtres se trouvent à gauche, mais que vous les voulez à droite, lancez la commande suivante dans une console:
+Si après une installation ou une mise à jour d'GNOME, les boutons de fenêtres se trouvent à gauche, mais que vous les voulez à droite, lancez la commande suivante dans une console:
 
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
 
@@ -117,15 +124,17 @@ L'arrière-plan utilisé dans la capture d'écran du bureau de Gnome est disponi
 
 ### Icônes
 
-Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé avec le paquet `gnome-themes`, sous licence LGPL. Cependant, ce paquet n'est plus disponible pour les dernières versions d'Ubuntu. Voici une méthode simple pour installer Mist:
+Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé avec le paquet `gnome-themes`, sous licence LGPL. Voici une méthode simple pour installer Mist:
 
 - [Télécharger l'archive du thème d'icônes Mist.](http://mirror.centos.org/centos/6/os/i386/Packages/gnome-themes-2.28.1-6.el6.noarch.rpm)
 
 - Extraire l'archive.
 
-- Copier le dossier `usr/share/icons/Mist` dans un des deux emplacements suivants:
+- Copier le dossier `usr/share/icons/Mist` dans un des emplacements suivants:
 
-	- `~/.icons/` pour l'utilisateur courant;
+	Para l'utilisatuer courant:
+	- `~/.local/share/icons/`, ou
+	- `~/.icons/`;
 	
 	- `/usr/share/icons/` pour tous les utilisateurs.
 
