@@ -1,0 +1,21 @@
+/* Color variant to avoid the blue scrollbars.  Use theme name Clearlooks-Phenix:plainsb.
+ */
+
+/* Import the main styles */
+@import "gtk.css";
+
+/* Override the ones that produce the colored scrollbars */
+@define-color scrollbar_slider_bg_color shade(@core_color_b, 0.99);
+@define-color scrollbar_slider_gradient_b shade(@core_color_b, 0.96);
+@define-color scrollbar_slider_gradient_c shade(@core_color_b, 0.92);
+@define-color scrollbar_slider_gradient_d shade(@core_color_b, 0.88);
+
+@define-color scrollbar_slider_border_color mix(#000000, shade(@core_color_b, 0.72), 0.95);
+
+@define-color scrollbar_slider_inner_border_color shade(@core_color_b, 1.04);
+
+@define-color scrollbar_slider_hover_bg_color shade(@core_color_b, 1.03);
+
+@define-color scrollbar_slider_hover_gradient_b shade(@core_color_b, 0.99);
+@define-color scrollbar_slider_hover_gradient_c shade(@core_color_b, 0.96);
+@define-color scrollbar_slider_hover_gradient_d shade(@core_color_b, 0.91);
