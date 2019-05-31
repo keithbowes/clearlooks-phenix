@@ -70,9 +70,7 @@ GtkGrid:disabled {
  ************/
 
 tooltip,
-tooltip.background,
-.tooltip,
-.tooltip.background {
+tooltip.background {
 	padding: 4px;
 	border-style: solid;
 	border-width: 1px;
@@ -82,8 +80,7 @@ tooltip.background,
 	color: @theme_tooltip_fg_color;
 }
 
-tooltip *,
-.tooltip * {
+tooltip * {
 	text-shadow: none;
 }
 
@@ -156,7 +153,6 @@ spinner:active:disabled {
 	border-image: none;
 }
 
-.rubberband,
 view rubberband,
 rubberband {
 	background-color: alpha (@theme_selected_bg_color, 0.35);
@@ -470,7 +466,7 @@ scale:focus trough {
  * Frames *
  **********/
 
- frame > border,
+frame > border,
 .frame {
 	box-shadow: none;
 	margin: 0;
@@ -1545,8 +1541,7 @@ treemenu menuitem {
 	padding: 2px;
 }
 
-menu,
-.menu {
+menu  {
 	font-weight: normal;
 	background-color: @menu_bg_color;
 	color: @menu_fg_color;
@@ -1556,8 +1551,7 @@ menu,
 	border-color: @menu_border_color;
 }
 
-menu button,
-.menu button{
+menu button {
 	background-image: none;
 	background-color: @menu_bg_color;
 	color: @internal_element_color;
@@ -1565,8 +1559,7 @@ menu button,
 	border-style: none;
 }
 
-menu button:hover,
-.menu button:hover {
+menu button:hover {
 	background-image: none;
 	background-color: @theme_base_color;
 	color: @theme_text_color;
@@ -1574,8 +1567,7 @@ menu button:hover,
 	border-style: none;
 }
 
-menu button:disabled,
-.menu button:disabled {
+menu button:disabled {
 	background-color: @theme_base_color;
 	color: lighter(@internal_element_color);
 	border-image: none;
@@ -1583,8 +1575,7 @@ menu button:disabled,
 }
 
 /* this controls the general appearance of the menubar */
-menubar,
-.menubar {
+menubar {
 	border-style: none;
 	padding: 0px;
 	-GtkWidget-window-dragging: true;
@@ -1596,8 +1587,7 @@ menubar,
 	                  to (@menubar_gradient_c));
 }
 
-menubar menuitem,
-.menubar menuitem {
+menubar menuitem {
 	border-style: solid;
 	border-width: 1px;
 	border-color: transparent;
@@ -1606,7 +1596,6 @@ menubar menuitem,
 }
 
 menubar menuitem:hover,
-.menubar menuitem:hover,
 menuitem button.flat:hover,
 menuitem button.flat:active {
 	background-color: @menu_bg_color;
@@ -1633,14 +1622,12 @@ menuitem button.flat:focus {
 	color: @theme_text_color;
 }
 
-menubar menuitem:hover,
-.menubar menuitem:hover {
+menubar menuitem:hover {
 	border-width: 1px;
 	color: @menubar_menuitem_hover_color;
 }
 
-menu menuitem,
-.menu menuitem {
+menu menuitem {
 	border-width: 1px;
 	border-style: solid;
 	border-color: transparent;
@@ -1648,8 +1635,7 @@ menu menuitem,
 	background-color: @menu_bg_color;
 }
 
-menu menuitem:hover,
-.menu menuitem:hover {
+menu menuitem:hover {
 	border-radius: 0;
 	border-style: solid;
 	border-width: 1px;
@@ -1658,8 +1644,7 @@ menu menuitem:hover,
 
 treemenu menuitem:hover,
 combobox menuitem:hover,
-menu menuitem:hover,
-.menu menuitem:hover {
+menu menuitem:hover {
 	border-style: solid;
 	border-width: 1px;
 	border-color: @menubar_menuitem_hover_border_color;
@@ -1699,34 +1684,28 @@ menuitem arrow {
 	color: @menu_controls_color;
 }
 
-menu menuitem arrow:dir(ltr),
-.menu menuitem arrow:dir(ltr) {
+menu menuitem arrow:dir(ltr) {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
-menu menuitem arrow:dir(rtl),
-.menu menuitem arrow:dir(rtl) {
+menu menuitem arrow:dir(rtl) {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
 }
 
-menu arrow.top,
-.menu arrow.top {
+menu arrow.top {
     -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
 }
 
-menu arrow.bottom,
-.menu arrow.bottom {
+menu arrow.bottom {
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 
-menu arrow:hover,
-.menu arrow:hover {
+menu arrow:hover {
     border-color: @theme_selected_fg_color;
     color: shade (@theme_selected_bg_color, 1.6);
 }
 
 menu separator,
-.menu separator,
 menuitem separator {
 	color: @menu_separator_color;
 	margin: 3px 1px 3px 1px;
@@ -1738,15 +1717,9 @@ menuitem radio,
 menuitem check:hover,
 menuitem radio:hover,
 menuitem check:disabled,
-menuitem radio:disabled
-menu menuitem .check,
-menu menuitem .radio,
-menu menuitem .check:hover,
-menu menuitem .radio:hover,
-menu menuitem .check:checked,
-menu menuitem .radio:checked,
-menu menuitem .check:disabled,
-menu menuitem .radio:disabled {
+menuitem radio:disabled,
+menuitem check:checked,
+meniutem radio:checked {
 	background-image: none;
 	background-color: transparent;
 	min-height: 12px;
@@ -1775,13 +1748,9 @@ menuitem button.flat:active {
  ****************/
 
 check,
-.check,
 radio,
-.radio,
 check:disabled,
-.check:disabled,
-radio:disabled,
-.radio:disabled {
+radio:disabled {
 	background-color: transparent;
 	border-style: none;
 }
@@ -2002,9 +1971,7 @@ iconview.view.cell:selected:focus {
 
 list,
 view,
-.view,
 view text,
-.view text,
 iconview text,
 textview text
 treeview {
@@ -2015,19 +1982,14 @@ treeview {
 view,
 view:selected,
 view:selected:focus,
-.view:selected,
-.view:selected:focus,
 view text selection,
-.view text selection,
 view text selection:focus,
-.view text selection:focus
 treeview:selected {
 	background-color: @theme_selected_bg_color;
 	color: @theme_selected_fg_color
 }
 
 view:disabled,
-.view:disabled,
 treeview:disabled {
 	background-color: @insensitive_bg_color;
 	color: @insensitive_fg_color;
