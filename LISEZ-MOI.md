@@ -124,25 +124,7 @@ L'arrière-plan utilisé dans la capture d'écran du bureau de Gnome est disponi
 
 ### Icônes
 
-Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé avec le paquet `gnome-themes`, sous licence LGPL. Voici une méthode simple pour installer Mist:
-
-- [Télécharger l'archive du thème d'icônes Mist.](http://mirror.centos.org/centos/6/os/i386/Packages/gnome-themes-2.28.1-6.el6.noarch.rpm)
-
-- Extraire l'archive.
-
-- Copier le dossier `usr/share/icons/Mist` dans un des emplacements suivants:
-
-	Para l'utilisatuer courant:
-	- `~/.local/share/icons/`, ou
-	- `~/.icons/`;
-	
-	- `/usr/share/icons/` pour tous les utilisateurs.
-
-- Ensuite, choisir le thème d'icônes Mist:
-
-	- sous Gnome: avec le logiciel gnome-tweak-tool en paramétrant *Theme > Icon theme*;
-	
-	- sous Xfce: en allant dans *Paramètres > Apparence > Icônes* du menu principal.
+Dans la même capture d'écran, le thème d'icônes obsolète Mist est utilisé.
 
 ## Développement et licence
 
