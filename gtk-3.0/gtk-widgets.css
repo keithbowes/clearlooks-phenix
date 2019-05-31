@@ -68,6 +68,7 @@ GtkGrid:disabled {
 /************
  * Tooltips *
  ************/
+
 tooltip,
 tooltip.background,
 .tooltip,
@@ -374,14 +375,6 @@ progressbar.vertical progress {
 row trough {
 	padding: 0;
 }
-/*
-row:selected progressbar trough,
-row:selected:focus progressbar trough {
-	background-image: -gtk-gradient (linear,
-	                  left top, left bottom,
-	                  from (mix (@trough_gradient_a, @theme_selected_bg_color, 0.25)),
-	                  to (mix (@trough_gradient_b, @theme_selected_bg_color, 0.25)));
-}*/
 
 /************
  * GtkScale *
@@ -895,10 +888,6 @@ notebook {
 	padding: 0;
 	background-clip: border-box;
 	background-color: @notebook_bg_color;
-	/*border-radius: 3px 3px 0px 0px;*/
-	/*-GtkNotebook-tab-overlap: 2;
-	-GtkNotebook-tab-curvature: 3;
-	-GtkNotebook-initial-gap: 0;*/
 }
 
 notebook viewport {
@@ -1136,8 +1125,6 @@ notebook header tabs arrow:backdrop:disabled {
 
 combobox {
 	padding: 0;
-	/*-GtkComboBox-arrow-scaling: 0.5;*/
-	/*-GtkComboBox-shadow-type: none;*/
 }
 
 combobox arrow {
@@ -1165,7 +1152,6 @@ combobox button.combo:disabled {
 }
 
 combobox separator {
-	/*-GtkWidget-wide-separators: true;*/
 	-GtkWidget-horizontal-separator: 1;
 	-GtkWidget-vertical-separator: 1;
 }
@@ -1217,28 +1203,7 @@ combobox > .linked > button.combo:disabled:only-child {
 	border-radius: 3px;
 	border-width: 1px;
 }
-/*
-toolbar.primary-toolbar combobox > .linked > entry.combo,
-toolbar.primary-toolbar combobox > .linked > button.combo {
-	border-image-width: 4px 4px 4px 0;
-	border-radius: 0 3px 3px 0;
-	border-left-width: 0;
-}
 
-toolbar.primary-toolbar combobox > .linked > entry.combo:first-child,
-toolbar.primary-toolbar combobox > .linked > button.combo:first-child {
-	border-image-width: 4px 0 4px 4px;
-	border-radius: 3px 0 0 3px;
-	border-right-width: 0;
-}
-
-toolbar.primary-toolbar combobox > .linked > entry.combo:last-child,
-toolbar.primary-toolbar combobox > .linked > button.combo:last-child {
-	border-image-width: 4px 4px 4px 0;
-	border-radius: 0 3px 3px 0;
-	border-left-width: 0;
-}
-*/
 /* linked combobox */
 
 /* Middle button */
@@ -1676,7 +1641,6 @@ menubar menuitem:hover,
 
 menu menuitem,
 .menu menuitem {
-	/*-GtkMenuItem-arrow-scaling: 0.5;*/
 	border-width: 1px;
 	border-style: solid;
 	border-color: transparent;
@@ -1975,7 +1939,6 @@ assistant .sidebar {
 	border-color: @gtkassistant_sidebar_border_color;
 	color: mix (@theme_fg_color, @theme_bg_color, 0.40);
 	background-color: shade (@theme_bg_color, 0.97);
-	/* shall we make it like sidebars in general? */
 }
 
 /*************
@@ -2516,10 +2479,6 @@ infobar:last-child,
 .titlebar .title {
 	font-weight: bold;
 }
-
-/*.titlebar :first-child {*/
-/*	padding: 5px 5px 6px 5px;*/
-/*}*/
 
 .titlebar button.titlebutton {
 	background: none;
